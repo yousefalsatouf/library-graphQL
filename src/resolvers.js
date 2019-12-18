@@ -5,7 +5,7 @@ export const resolvers = {
         hello: () => "hello",
         users: () => User.find(),
     },
-    Mutation: {
+   Mutation: {
         createUser: async (_, {name, password}) => {
             const user = new User({name, password});
             await user.save();
