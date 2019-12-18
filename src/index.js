@@ -1,12 +1,17 @@
+require('dotenv').config();
+
 import { ApolloServer, gql } from "apollo-server-express";
 import express from "express";
 import mongoose from "mongoose";
 import { resolvers } from "./resolvers";
 import { typeDefs } from "./typeDefs";
 
+const { APP_PORT, PORT } = process.env;
+mongoose.set("debug", true);
+
 const startServer = async() => {
     const app = express();
-    let url = "mongodb+srv://yousef:yousef@cluster0-nvddo.mongodb.net/test";
+    const url = process.env.MONGO_URI;
     const server = new ApolloServer({
         typeDefs,
         resolvers
