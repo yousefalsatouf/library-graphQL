@@ -6,7 +6,6 @@ import mongoose from "mongoose";
 import { resolvers } from "./resolvers";
 import { typeDefs } from "./typeDefs";
 
-const { APP_PORT, PORT } = process.env;
 mongoose.set("debug", true);
 
 const startServer = async() => {
