@@ -8,5 +8,5 @@ export const Book = mongoose.model("Book", {
     cover: String,
     copiesNumbers: String,
     commentStatus: Boolean,
-    author: Object
+    authors: Object
 });

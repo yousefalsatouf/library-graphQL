@@ -15,7 +15,7 @@ export const typeDefs = gql `
         email: String!
         password: String!
         nBorrow: String!
-        book: Book!
+        books: Book!
     }
     type Book 
     {
@@ -28,7 +28,7 @@ export const typeDefs = gql `
         copiesNumber: String!
         commentStatus: String!
         language: String!
-        author: Author!
+        authors: Author!
     }
 
     type Author
