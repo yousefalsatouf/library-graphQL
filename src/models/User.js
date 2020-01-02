@@ -6,5 +6,5 @@ export const User = mongoose.model("User", {
     firstName: String,
     lastName: String,
     book: Array,
-    maxBorrow: String,
+    nBorrow: String,
 });

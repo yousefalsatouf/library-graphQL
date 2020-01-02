@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 
 export const Author = mongoose.model("Author", {
+    email: String,
     firstName: String,
     lastName: String,
-    email: String,
     gsm: String,
     address: String,
 });

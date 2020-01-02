@@ -6,5 +6,7 @@ export const Book = mongoose.model("Book", {
     editor: String,
     format: String,
     cover: String,
-    copiesNber: String,
+    copiesNumbers: String,
+    commentStatus: Boolean,
+    author: Object
 });
