@@ -20,7 +20,7 @@ export const typeDefs = gql `
         lastName: String!
         email: String!
         password: String!
-        books: Book!
+        book: Book!
         ratings: Rating!
     }
     type Book 
@@ -80,12 +80,3 @@ export const typeDefs = gql `
         endDate: String!
     }
 `;
-
-
-/*
-*
-* type Mutation {
-        createUser(name: String!, password: String!): User!
-    }
-*
-* */

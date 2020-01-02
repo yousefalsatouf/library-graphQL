@@ -28,3 +28,5 @@ const startServer = async() => {
 };
 
 startServer();
+
+console.log('the end');
