@@ -1,7 +1,7 @@
 import { gql } from 'apollo-server';
 
 export default gql`
-    type Rent {
+    type RentBook {
         id: ID!
         book: Book!
         author: User!

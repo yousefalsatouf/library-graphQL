@@ -1,5 +1,5 @@
+import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
-import bcrypt from 'bcrypt';
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -15,10 +15,7 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    oldestDateOfRental: {
-        type: Array,
-        required: false
-    },
+    oldestDateOfRental: { type: Array, required: false },
     books: [
         {
             type: mongoose.Schema.Types.ObjectId,

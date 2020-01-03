@@ -8,10 +8,10 @@ import jwt from 'jsonwebtoken';
 import schemas from './schemas';
 import resolvers from './resolvers';
 
-import Books from './models/Book';
-import Users from './models/User';
-import Comments from './models/Comment';
-import Rent from './models/Rent'
+import userModel from './models/userModel';
+import bookModel from './models/bookModel';
+import commentModel from './models/commentModel';
+import rentBookModel from './models/rentBookModel';
 
 const startServer = async() =>
 {
@@ -42,10 +42,10 @@ const startServer = async() =>
                 return {
                     me,
                     models: {
-                        Users,
-                        Books,
-                        Comments,
-                        Rent
+                        userModel,
+                        bookModel,
+                        commentModel,
+                        rentBookModel
                     }
                 };
             }

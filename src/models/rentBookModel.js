@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
-import book from "./Book";
 
-const rentSchema= new mongoose.Schema({
+const rentSchema = new mongoose.Schema({
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user'
@@ -18,6 +17,6 @@ const rentSchema= new mongoose.Schema({
     }
 });
 
-const rent = mongoose.model('rent', rentSchema);
+const rentBook = mongoose.model('rentBook', rentSchema);
 
-export default rent;
+export default rentBook;

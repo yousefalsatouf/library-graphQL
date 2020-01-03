@@ -1,6 +1,6 @@
-import bookResolver from './BookResolvers';
-import userResolver from './UserResolvers';
-import commentResolver from './CommentResolvers';
-import rentBookResolver from './RentResolvers';
+import bookResolver from './bookResolvers';
+import userResolver from './userResolvers';
+import commentResolver from './commentResolvers';
+import rentBookResolver from './rentBookResolvers';
 
 export default [userResolver, bookResolver, commentResolver, rentBookResolver];

@@ -5,7 +5,7 @@ export default gql`
         id: ID!
         title: String!
         subtitle: String!
-        author: User!
+            author: User!
         editor: String!
         format: String!
         language: String!
